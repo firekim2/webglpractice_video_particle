@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                overscroll-behavior: none;
+                background-color: black;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #container{
+                width: 100vw;
+                height: 100vh;
+                position:absolute;
+                top: 0;
+                left: 0;
+                z-index: 9;
+            }
+
+            #vid-container{
+                position:absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #vid-container video{
+                width: 1200px;
+            }
+
+            canvas{
+                display: block;
+            }
+
+            video{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <div id="vid-container"></div>
+        <script src="app.js"></script>
+    </body>
+</html>
